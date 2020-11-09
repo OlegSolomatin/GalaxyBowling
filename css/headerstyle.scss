@@ -1,0 +1,361 @@
+@import "galaxyvariablesstyle.scss";
+
+header {
+  .container-header-nav-bg {
+    width: 100%;
+    background: $darkfiol;
+    @include flex();
+    @include align-items-center();
+    @include justify-content-center();
+
+    .container-header-nav {
+      @include flex();
+      @include flex-rowdirection();
+      @include justify-content-around();
+      @include align-items-center();
+      @include paddingposition();
+      max-width: 1920px;
+      width: 100%;
+
+      a {
+        @include linkstyle($size20);
+        padding: 30px 0px 22px;
+      }
+    }
+  }
+  .container-header-info-menu__bg {
+    width: 100%;
+    background: url("../img/hd_grad.jpg");
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: 100% 100%;
+    @include flex();
+    @include align-items-center();
+    @include justify-content-center();
+    @include flex-coldirection();
+    padding-top: clamp(25px, 2.5vw, 50px);
+    padding-bottom: clamp(45px, 5vw, 85px);
+    @include mediaMaxW(550px){
+      padding-top: 25px;
+    }
+
+    .container-header-info {
+      @include paddingposition();
+      @include flex();
+      @include flex-rowdirection();
+      @include align-items-center();
+      @include justify-content-between();
+      max-width: 1920px;
+      width: 100%;
+      @include mediaMaxW(550px){
+        @include flex-coldirection();
+      }
+
+      .container-header-logo {
+        width: 100%;
+        @include mediaMaxW(550px){
+          width: max-content;
+        }
+
+        a {
+          img {
+            width: clamp(140px, 15vw, 220px);
+          }
+        }
+      }
+
+      .container-header-place {
+        width: max-content;
+        @include mediaMaxW(550px){
+          margin: 15px 0;
+        }
+
+        label {
+          color: $whitetext;
+          font-size: $size30;
+          font-family: 'OpenSans-SemiBold';
+          line-height: 1.2;
+          @include mediaMaxW(991.7px) {
+            display: none;
+          }
+        }
+
+        .select {
+          position: relative;
+          @include flex();
+          @include flex-rowdirection();
+          @include align-items-center();
+          @include justify-content-center();
+        }
+
+        .select__head {
+          width: clamp(100px, 2vw, 150px);
+          max-width: 100%;
+          font-size: $size28;
+          line-height: 1;
+          color: $yellowtext;
+          cursor: pointer;
+          margin-left: 15px;
+        }
+
+        .select__head::after {
+          content: '';
+          font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+          font-weight: 900;
+          //background: url("../img/arrow-circle-down-solid.svg"), no-repeat;
+          fill: $whitetext;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          right: 20px;
+          bottom: 50%;
+          transform: rotate(360deg);
+          display: block;
+          transition: .2s ease-in;
+          color: white;
+        }
+
+        .select__head.open::after {
+          transform: rotate(180deg);
+        }
+
+        .select__list {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: $darkfiol;
+          border-radius: 15px;
+          margin-top: 5px;
+          max-height: 205px;
+          overflow-x: hidden;
+          overflow-y: auto;
+          z-index: 100;
+          margin: 0;
+          padding: 0;
+          font-size: $size20;
+          color: $whitetext;
+          scrollbar-color: dark;
+          scrollbar-width: thin;
+          overscroll-behavior: contain;
+        }
+
+        .select__list::-webkit-scrollbar {
+          width: 7px;
+          background-color: #F8F9FA;
+          padding: 5px;
+        }
+
+        .select__list::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background-color: #D9D9D9;
+        }
+
+        .select__list .select__item {
+          position: relative;
+          border-top: 1px solid rgba(224, 229, 231, 0.5);
+          padding: 10px 15px;
+          cursor: pointer;
+          list-style-type: none;
+        }
+
+        .select__list .select__item:hover {
+          color: $yellowtext;
+        }
+      }
+
+      .container-header-adres {
+        color: $whitetext;
+        font-size: $size30;
+        width: max-content;
+        margin: 0px clamp(15px, 3vw, 50px);
+        @include mediaMaxW(768px){
+          display: none;
+        }
+
+        span {
+          line-height: 1.2;
+        }
+      }
+
+      .container-header-number {
+        width: max-content;
+
+        a {
+          @include linkstyle($size35);
+        }
+      }
+    }
+
+    .container-header-menu {
+      @include paddingposition();
+      @include flex();
+      @include flex-rowdirection();
+      @include align-items-center();
+      @include justify-content-center();
+      max-width: 1920px;
+      width: 100%;
+
+      &-nav {
+        width: calc(100vw - 16vw);
+        padding: 50px 0;
+          .list-header-menu {
+            @include flex();
+            @include flex-rowdirection();
+            @include justify-content-between();
+            @include flex-wrap();
+
+            .container-item-list {
+              @include flex();
+              @include align-items-start();
+              @include justify-content-center();
+              width: 16%;
+              @include mediaMaxW(768px){
+                width: 32%;
+              }
+
+              .item {
+                text-decoration: none;
+
+                figure {
+                  @include flex();
+                  @include justify-content-start();
+                  @include align-items-center();
+                  @include flex-coldirection();
+                  transition: .8s;
+
+                  svg {
+                    position: absolute;
+                    width: clamp(50px, 13vw, 140px);
+                    transition: .8s;
+                  }
+
+                  .container-img-bg {
+                    width: max-content;
+                    height: auto;
+                    //clip-path: polygon(100% 15.12%, 85% 100%, 10% 100%, 0% 0%);
+                    z-index: 1;
+                    transition: .8s;
+
+                    img {
+                      padding: clamp(10px, 3vw, 30px);
+                      width: clamp(50px, 13vw, 140px);
+                      transition: .8s;
+                      height: clamp(50px, 13vw, 140px);
+                    }
+                  }
+
+                  figcaption {
+                    text-align: center;
+                    margin: 40px 0 0 0;
+                    @include mediaMaxW(768px){
+                      margin: 0;
+                    }
+
+                    span {
+                      color: $whitetext;
+                      line-height: 1.2;
+                      font-size: $size30;
+                      padding: 10px 10px 15px;
+                      text-transform: uppercase;
+                      background: transparent;
+                      transition: .8s;
+                      display: block;
+                      width: max-content;
+                      @include mediaMaxW(550px){
+                        width: auto;
+                      }
+                    }
+
+                    .container-link-menu {
+                      display: none;
+                      transition: .8s;
+                    }
+                  }
+                }
+
+                figure:hover {
+                  transition: .8s;
+                  cursor: pointer;
+                  z-index: 2;
+
+                  svg {
+                    transition: .8s;
+                    transform: scale(1.2);
+
+                    g {
+                      path {
+                        fill: $yellowtext;
+                        color: $yellowtext;
+                        transition: .8s;
+                      }
+                    }
+                  }
+
+                  .container-img-bg {
+                    transition: .8s;
+                    transform: scale(1.2);
+                  }
+
+                  figcaption {
+                    span {
+                      color: $darkfiol;
+                      background: $yellowtext;
+                      transition: .8s;
+                      border-top-left-radius: 15px;
+                      border-top-right-radius: 15px;
+                    }
+
+                    .container-link-menu {
+                      display: block;
+                      position: absolute;
+                      background: $yellowtext;
+                      font-size: $size20;
+                      transition: .8s;
+                      width: calc(100vw - 10vw);
+                      left: 0;
+                      right: 0;
+                      padding: 25px 50px;
+                      border-radius: 15px;
+                      margin: 0 auto;
+                      margin: 0 auto;
+                      padding: 30px;
+                      border-radius: 15px;
+                      max-width: 1920px;
+                      z-index: 2;
+
+                      ul {
+                        @include flex();
+                        @include flex-rowdirection();
+                        @include justify-content-around();
+                        @include align-items-center();
+                        color: $fioltext;
+                        transition: .8s;
+
+                        li {
+                          a {
+                            text-decoration: none;
+                            color: inherit;
+                          }
+                        }
+
+                        &:hover {
+                          color: $darkfiol;
+                        }
+                      }
+
+                      &:hover {
+                        display: block;
+                        transition: .8s;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

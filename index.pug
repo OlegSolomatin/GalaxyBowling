@@ -1,0 +1,420 @@
+- var textaltalb = 'Посмотреть все фотот альбома'
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+        meta(name='description' content='GalaxyBowling - Галактика Боулиинг Коломна')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous')
+        link(rel='stylesheet' href='libs/fontawesome-free-5.15.1-web/css/all.min.css')
+        script(src='js/galaxy.js')
+        script(src='js/apivk.js')
+        link(rel='stylesheet' href='css/headerstyle.css')
+        link(rel='stylesheet' href='css/mainstyle.css')
+        link(rel='stylesheet' href='css/footerstyle.css')
+        title Galaxy Bowling
+        script(src='https://kit.fontawesome.com/7e4d23cf7d.js' crossorigin='anonymous')
+    body
+        header
+            .container-header-nav-bg
+                .container-header-nav
+                    a(href='#')
+                        span Text
+                    a(href='#')
+                        span Text
+                    a(href='#')
+                        span Text
+                    a(href='#')
+                        span Text
+                    a(href='#')
+                        span Text
+                    a(href='#')
+                        span Text
+            .container-header-info-menu__bg
+                .container-header-info
+                    .container-header-logo
+                        a(href='#')
+                            img(src='img/logo.png')
+                    .container-header-place
+                        .select
+                            label Город:
+                            input.select__input(type='hidden' name='')
+                            .select__head
+                            ul.select__list(style='display: none;')
+                                li.select__item Коломна
+                                li.select__item Череповец
+                    .container-header-adres
+                        span Ул.Суворова,&nbsp;д.48
+                    .container-header-number
+                        a(href='tel:+74966130700') +7&nbsp;(496)&nbsp;613&#8209;07&#8209;00
+                .container-header-menu
+                    nav.container-header-menu-nav
+                        ul.list-header-menu
+                            li.container-item-list
+                                .item
+                                    figure.content-item
+                                        svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 165 143' style='enable-background:new 0 0 165 143;' xml:space='preserve')
+                                            style(type='text/css').
+                                                .st0 {
+                                                    fill: #FFFFFF;
+                                                }
+                                            g(transform='matrix(1, 0, 0, 1, 0, 0)')
+                                                path#Path_2-2.st0(d='M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8\
+                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z')
+                                        .container-img-bg
+                                            img(src='img/1.png')
+                                        figcaption
+                                            span Афиша
+                                            .container-link-menu
+                                                ul
+                                                    li
+                                                        a(href='#') Тарифы
+                                                    li
+                                                        a(href='#') Правила боулинга
+                                                    li
+                                                        a(href='#') Лига боулинга
+                                                    li
+                                                        a(href='#') Туриниры
+                                                    li
+                                                        a(href='#') Рекорды галактики
+                                                    li
+                                                        a(href='#') Чемпионат по боулингу
+                            li.container-item-list
+                                .item
+                                    figure.content-item
+                                        svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 165 143' style='enable-background:new 0 0 165 143;' xml:space='preserve')
+                                            style(type='text/css').
+                                                .st0 {
+                                                    fill: #FFFFFF;
+                                                }
+                                            g(transform='matrix(1, 0, 0, 1, 0, 0)')
+                                                path#Path_2-2.st0(d='M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8\
+                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z')
+                                        .container-img-bg
+                                            img(src='img/2.png')
+                                        figcaption
+                                            span Боулинг
+                                            .container-link-menu
+                                                ul
+                                                    li
+                                                        a(href='#') Тарифы
+                                                    li
+                                                        a(href='#') Правила боулинга
+                                                    li
+                                                        a(href='#') Лига боулинга
+                                                    li
+                                                        a(href='#') Туриниры
+                                                    li
+                                                        a(href='#') Рекорды галактики
+                                                    li
+                                                        a(href='#') Чемпионат по боулингу
+                            li.container-item-list
+                                .item
+                                    figure.content-item
+                                        svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 165 143' style='enable-background:new 0 0 165 143;' xml:space='preserve')
+                                            style(type='text/css').
+                                                .st0 {
+                                                    fill: #FFFFFF;
+                                                }
+                                            g(transform='matrix(1, 0, 0, 1, 0, 0)')
+                                                path#Path_2-2.st0(d='M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8\
+                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z')
+                                        .container-img-bg
+                                            img(src='img/3.png')
+                                        figcaption
+                                            span Ресторан
+                                            .container-link-menu
+                                                ul
+                                                    li
+                                                        a(href='#') Тарифы
+                                                    li
+                                                        a(href='#') Правила боулинга
+                                                    li
+                                                        a(href='#') Лига боулинга
+                                                    li
+                                                        a(href='#') Туриниры
+                                                    li
+                                                        a(href='#') Рекорды галактики
+                                                    li
+                                                        a(href='#') Чемпионат по боулингу
+                            li.container-item-list
+                                .item
+                                    figure.content-item
+                                        svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 165 143' style='enable-background:new 0 0 165 143;' xml:space='preserve')
+                                            style(type='text/css').
+                                                .st0 {
+                                                    fill: #FFFFFF;
+                                                }
+                                            g(transform='matrix(1, 0, 0, 1, 0, 0)')
+                                                path#Path_2-2.st0(d='M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8\
+                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z')
+                                        .container-img-bg
+                                            img(src='img/4.png')
+                                        figcaption
+                                            span Для детей
+                                            .container-link-menu
+                                                ul
+                                                    li
+                                                        a(href='#') Тарифы
+                                                    li
+                                                        a(href='#') Правила боулинга
+                                                    li
+                                                        a(href='#') Лига боулинга
+                                                    li
+                                                        a(href='#') Туриниры
+                                                    li
+                                                        a(href='#') Рекорды галактики
+                                                    li
+                                                        a(href='#') Чемпионат по боулингу
+                            li.container-item-list
+                                .item
+                                    figure.content-item
+                                        svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 165 143' style='enable-background:new 0 0 165 143;' xml:space='preserve')
+                                            style(type='text/css').
+                                                .st0 {
+                                                    fill: #FFFFFF;
+                                                }
+                                            g(transform='matrix(1, 0, 0, 1, 0, 0)')
+                                                path#Path_2-2.st0(d='M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8\
+                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z')
+                                        .container-img-bg
+                                            img(src='img/5.png')
+                                        figcaption
+                                            span Акции
+                                            .container-link-menu
+                                                ul
+                                                    li
+                                                        a(href='#') Тарифы
+                                                    li
+                                                        a(href='#') Правила боулинга
+                                                    li
+                                                        a(href='#') Лига боулинга
+                                                    li
+                                                        a(href='#') Туриниры
+                                                    li
+                                                        a(href='#') Рекорды галактики
+                                                    li
+                                                        a(href='#') Чемпионат по боулингу
+                            li.container-item-list
+                                .item
+                                    figure.content-item
+                                        svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewbox='0 0 165 143' style='enable-background:new 0 0 165 143;' xml:space='preserve')
+                                            style(type='text/css').
+                                                .st0 {
+                                                    fill: #FFFFFF;
+                                                }
+                                            g(transform='matrix(1, 0, 0, 1, 0, 0)')
+                                                path#Path_2-2.st0(d='M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8\
+                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z')
+                                        .container-img-bg
+                                            img(src='img/7.png')
+                                        figcaption
+                                            span Торты на заказ
+                                            .container-link-menu
+                                                ul
+                                                    li
+                                                        a(href='#') Тарифы
+                                                    li
+                                                        a(href='#') Правила боулинга
+                                                    li
+                                                        a(href='#') Лига боулинга
+                                                    li
+                                                        a(href='#') Туриниры
+                                                    li
+                                                        a(href='#') Рекорды галактики
+                                                    li
+                                                        a(href='#') Чемпионат по боулингу
+        main
+            .container-main-carousel-news
+                #carouselExampleControls.carousel.slide(data-ride='carousel')
+                    .carousel-inner
+                        .carousel-item.active
+                            img.lost-image.d-block.w-100(src='img/banner_samp.png' alt='...')
+                        .carousel-item
+                            img.lost-image.d-block.w-100(src='img/banner_samp.png' alt='...')
+                        .carousel-item
+                            img.lost-image.d-block.w-100(src='img/banner_samp.png' alt='...')
+                    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only
+                    a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only
+            .container-main-foto-news
+                section
+                    h2 TEXT TEXT
+                    .container-foto-news-position
+                        .container-item
+                            .container-content
+                                img.lost-image(src='img/preview.jpg')
+                                .title-item
+                                    h3 Text
+                                h4 subtext
+                                .container-view-item
+                                    span
+                                        i.far.fa-eye
+                                        | 123
+                                    span
+                                        i.far.fa-images
+                                        | 5647
+                                a(href='#' alt=' #{textaltalb} ') Check albom
+                        .container-item
+                            .container-content
+                                img.lost-image(src='img/preview.jpg')
+                                .title-item
+                                    h3 Text
+                                h4 subtext
+                                .container-view-item
+                                    span
+                                        i.far.fa-eye
+                                        | 123
+                                    span
+                                        i.far.fa-images
+                                        | 5647
+                                a(href='#' alt=' #{textaltalb} ') Check albom
+                        .container-item
+                            .container-content
+                                img.lost-image(src='img/preview.jpg')
+                                .title-item
+                                    h3 Text
+                                h4 subtext
+                                .container-view-item
+                                    span
+                                        i.far.fa-eye
+                                        | 123
+                                    span
+                                        i.far.fa-images
+                                        | 5647
+                                a(href='#' alt=' #{textaltalb} ') Check albom
+                    a.button(href='#' alt=' #{textaltalb} ') Смотреть все альбомы
+            .container-main-previe-menu
+                .container-main-previe-menu-bg
+                    section
+                        h2 Наше меню
+                        .container-previe-menu-position
+                            .container-item
+                                .container-item-img
+                                    img.lost-image(src='img/carbonara.jpg')
+                                .container-title
+                                    h3 TExt
+                                .subtexttitle
+                                    span TEETETETETTETETETT TETTETETETT TETETTETET TET TET TET TET TET TET T TTE TT T!@# !@# QWE QWE QWTE!@T E
+                                .container-price-item
+                                    span.price 270
+                                    spna.price-currency  руб.
+                            .container-item
+                                .container-item-img
+                                    img.lost-image(src='img/chiken.jpg')
+                                .container-title
+                                    h3 TExt
+                                .subtexttitle
+                                    span TEETETETETTETETETT TETTETETETT TETETTETET TET TET TET TET TET TET T TTE TT T!@# !@# QWE QWE QWTE!@T E
+                                .container-price-item
+                                    span.price 270
+                                    spna.price-currency  руб.
+                            .container-item
+                                .container-item-img
+                                    img.lost-image(src='img/tea.jpg')
+                                .container-title
+                                    h3 TExt
+                                .subtexttitle
+                                    span TEETETETETTETETETT TETTETETETT TETETTETET TET TET TET TET TET TET T TTE TT T!@# !@# QWE QWE QWTE!@T E
+                                .container-price-item
+                                    span.price 270
+                                    spna.price-currency  руб.
+                        a.button(href='#') Смотреть всё меню
+            .container-main-feedback
+                section
+                    h2 TEXT TEXT
+                    .container-feedback-position
+                        .container-item
+                            .container-content
+                                .container-title
+                                    h3 TExt
+                                .container-symbol
+                                    span "
+                                .subtexttitle
+                                    span ОТДЫХАЛИ В " ГАЛАКТИКЕ", ЮБИЛЕЙ, ПАПЕ 65 ЛЕТ.ГОСТЕЙ БЫЛО МНОГО И ВСЕ ОСТАЛИСЬ ДОВОЛЬНЫ.БЛАГОДАРНЫ ВАШИМ ОФИЦИАНТАМ,ОЧЕНЬ ДОБРЫЕ И ОТЗЫВЧИВЫЕ.ВСЕГДА С УЛЫБКОЙ.НЕ ВСЕГДА , В ЗАВЕДЕНИЯХ НАШЕГО ГОРОДА , РАБОТАЮТ ТАКИЕ ЛЮДИ.ПО ПЕРВОЙ ПРОСЬБЕ ИСПОЛНЯЛИ ВСЕ НАШИ ПОЖЕЛАНИЯ
+                                a(href='#') Читать полностью
+                        .container-item
+                            .container-content
+                                .container-title
+                                    h3 TExt
+                                .container-symbol
+                                    span "
+                                .subtexttitle
+                                    span Посчастливилось поучаствовать командой девчат в пивном турнире...море позитива получила. Заняли 3-е место и получили кучу удовольствия от игры, от атмосферы. Были веселые конкурсы, вкусные закуски и много-много пива. Хочется выразить слова признательности организаторам РЦ "Галактика": организовали все так замечательно, что за один вечер удалось подружить 8 разных команд, сплотить всех, повеселить анимацией, накормить, напоить. В общем – мы отлично провели вечер!
+                                a(href='#') Читать полностью
+                        .container-item
+                            .container-content
+                                .container-title
+                                    h3 TExt
+                                .container-symbol
+                                    span "
+                                .subtexttitle
+                                    span ВЫРАЖАЕМ ОГРОМНУЮ БЛАГОДАРНОСТЬ БОУЛИНГ-КЛУБУ " ГАЛАКТИКА" ЗА ТО, ЧТО СДЕЛАЛИ ДЕНЬ РОЖДЕНИЯ ПРОСТО НЕЗАБЫВАЕМЫМ. ВЕСЬ ПЕРСОНАЛ ДОБРОЖЕЛАТЕЛЕН И СВОЕВРЕМЕННО РЕШАЕТ ВСЕ ВОЗНИКАЮЩИЕ ВОПРОСЫ.ПОСЛЕ ТАКОГО ОБСЛУЖИВАНИЯ И ОТНОШЕНИЯ ХОЧЕТСЯ ПРИХОДИТЬ К ВАМ СНОВА И СНОВА
+                                a(href='#') Читать полностью
+                    a.button(href='#') Смотреть все отзывы
+            .container-main-aboutus
+                .container-main-position-aboutus
+                    section
+                        h2 Развлекательный центр "Галактика Коломна"
+                        h3 У нас вы найдте:
+                        p 8 новейших дорожек для боулинга фирмы Sanwick
+                        p Шикарный ресторан с фирменными блюдами от шеф-повора
+                        p Детскую игровую площадку с сухим байссейном, горкой, модулями и творческими столиками
+                        p Стильный интерьер и массу возможностей для проведения банкетов и праздников
+                .container-main-tell-a-friend
+                    a(href='https://vk.com' target='_blank') Рассказать друзьям
+                        .social-icon
+                            i.fab.fa-vk
+                            span#vkontakte_count
+        footer
+            .container-footer
+                .container-footer-content
+                    .left-content
+                        p &copy; РЦ "Галактика" 2018
+                        p все права защищены
+                    .container-social-link
+                        h3 Дружите с нами здесь:
+                        .social-link
+                            a(href='#' target='_blank').vk.fa-layers.fa-fw
+                                i.far.fa-circle
+                                i.fab.fa-vk
+                            a(href='#' tarfet='_blank').ok.fa-layers.fa-fw
+                                i.far.fa-circle
+                                i.fab.fa-odnoklassniki
+                            a(href='#' target='_blank').facebook.fa-layers.fa-fw
+                                i.far.fa-circle
+                                i.fab.fa-facebook-f
+                            a(href='#' target='_blank').instagram.fa-layers.fa-fw
+                                i.far.fa-circle
+                                i.fab.fa-instagram
+                    .right-content
+                        h4 График работы
+                        ul
+                            li
+                                span Понедельник&nbsp;-&nbsp;четверг:&nbsp;
+                                    span c&nbsp;
+                                    span 14:00&nbsp;
+                                    span до&nbsp;
+                                    span 01:00&nbsp;
+                            li
+                                span Пятница:&nbsp;
+                                    span c&nbsp;
+                                    span 12:00&nbsp;
+                                    span до&nbsp;
+                                    span 04:00&nbsp;
+                            li
+                                span Суббота:&nbsp;
+                                    span c&nbsp;
+                                    span 11:00&nbsp;
+                                    span до&nbsp;
+                                    span 04:00&nbsp;
+                            li
+                                span Воскресенье:&nbsp;
+                                    span c&nbsp;
+                                    span 12:00&nbsp;
+                                    span до&nbsp;
+                                    span 02:00&nbsp;

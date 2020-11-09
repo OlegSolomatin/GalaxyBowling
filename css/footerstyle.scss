@@ -1,0 +1,223 @@
+@import "galaxyvariablesstyle.scss";
+
+footer{
+  width: 100%;
+  background-color: $bgfiolmountain;
+  padding: 0px 0px 70px;
+  @include flex();
+  @include justify-content-center();
+  @include align-items-center();
+  .container-footer{
+    @include paddingposition();
+    max-width: 1920px;
+    width: 100%;
+    @include flex();
+    @include justify-content-center();
+    @include align-items-center();
+    @include flex-coldirection();
+    .container-footer-content{
+      @include flex();
+      @include flex-rowdirection();
+      @include justify-content-between();
+      @include align-items-center();
+      width: 100%;
+      margin-top: 5vw;
+      @include mediaMaxW(768px){
+        @include flex-coldirection();
+        @include justify-content-center();
+      }
+        .left-content{
+          width: 100%;
+          text-align: left;
+          font-size: $size20;
+          color: $whitetext;
+          line-height: 1.2;
+          @include mediaMaxW(768px){
+            order: 3;
+            width: max-content;
+          }
+          p{
+            margin: 0;
+          }
+        }
+        .container-social-link{
+          @include flex();
+          @include flex-coldirection();
+          @include justify-content-center();
+          @include align-items-center();
+          text-align: center;
+          width: 100%;
+          @include mediaMaxW(768px){
+            order: 1;
+            width: max-content;
+          }
+          h3{
+            color: $whitetext;
+            text-transform: uppercase;
+            font-size: $size28;
+          }
+          .social-link{
+            @include flex();
+            @include justify-content-center();
+            @include align-items-center();
+            @include flex-rowdirection();
+            @include flex-wrap();
+            width: 100%;
+            a{
+              text-decoration: none;
+              color: $whitetext;
+              width: 5vw;
+              height: 5vw;
+              margin: clamp(10px, 2vw, 20px);
+              transition: .8s;
+              border-radius: 50%;
+              @include mediaMaxW(768px){
+                width: 10vw;
+                height: 10vw;
+              }
+              svg{
+                color: $whitetext;
+                fill: $whitetext;
+                &:first-child{
+                  width: 5vw;
+                  height: 5vw;
+                  stroke-width: 30px;
+                  stroke: #D50181;
+                  stroke-width: 30px;
+                  stroke: #D50181;
+                  @include mediaMaxW(768px){
+                    width: 10vw;
+                    height: 10vw;
+                  }
+                }
+                &:last-child{
+                  width: 5vw;
+                  height: 2.5vw;
+                  @include mediaMaxW(768px){
+                    width: 10vw;
+                    height: 5vw;
+                  }
+                }
+              }
+              &:hover{
+                border-radius: 50%;
+                background: $whitetext;
+                border: 0px;
+                svg:first-child{
+                  stroke: none;
+                }
+              }
+              &.vk:hover{
+                color: $colorvk;
+                fill: $colorvk;
+                transition: .8s;
+                svg{
+                  color: $colorvk;
+                  fill: $colorvk;
+                  transition: .8s;
+                }
+              }
+              &.ok:hover{
+                color: $colorok;
+                fill: $colorok;
+                transition: .8s;
+                svg{
+                  color: $colorok;
+                  fill: $colorok;
+                  transition: .8s;
+                }
+              }
+              &.facebook:hover{
+                color: $colorfb;
+                fill: $colorfb;
+                transition: .8s;
+                svg{
+                  color: $colorfb;
+                  fill: $colorfb;
+                  transition: .8s;
+                }
+              }
+              &.instagram:hover{
+                color: $colorinst;
+                fill: $colorinst;
+                transition: .8s;
+                svg{
+                  color: $colorinst;
+                  fill: $colorinst;
+                  transition: .8s;
+                }
+              }
+              &.youtube:hover{
+                color: $coloryt;
+                fill: $coloryt;
+                transition: .8s;
+                svg{
+                  color: $coloryt;
+                  fill: $coloryt;
+                  transition: .8s;
+                }
+              }
+              &.twitter:hover{
+                color: $colortw;
+                fill: $colortw;
+                transition: .8s;
+                svg{
+                  color: $colortw;
+                  fill: $colortw;
+                  transition: .8s;
+                }
+              }
+              &.telegram:hover{
+                color: $colortg;
+                fill: $colortg;
+                transition: .8s;
+                svg{
+                  color: $colortg;
+                  fill: $colortg;
+                  transition: .8s;
+                }
+              }
+              &.whatsapp:hover{
+                color: $colorwa;
+                fill: $colorwa;
+                transition: .8s;
+                svg{
+                  color: $colorwa;
+                  fill: $colorwa;
+                  transition: .8s;
+                }
+              }
+            }
+          }
+        }
+        .right-content{
+          @include flex();
+          @include flex-coldirection();
+          @include justify-content-center();
+          @include align-items-end();
+          width: 100%;
+          @include mediaMaxW(768px){
+            order: 2;
+            width: max-content;
+            margin: 25px 0;
+            @include align-items-center();
+          }
+          h4{
+            font-size: $size20;
+            color: $whitetext;
+            text-align: right;
+            line-height: 1.2;
+            @include mediaMaxW(768px){
+              line-height: 1.4;
+            }
+          }
+          ul{
+            text-align: right;
+            font-size: $size20;
+            color: $whitetext;
+            line-height: 1.2;
+          }
+        }
+      }
+  }
+}

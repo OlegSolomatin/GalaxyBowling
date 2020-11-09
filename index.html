@@ -1,0 +1,379 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="description" content="GalaxyBowling - Галактика Боулиинг Коломна"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/fontawesome-free-5.15.1-web/css/all.min.css"/>
+    <script src="js/galaxy.js"></script>
+    <script src="js/apivk.js"></script>
+    <link rel="stylesheet" href="css/headerstyle.css"/>
+    <link rel="stylesheet" href="css/mainstyle.css"/>
+    <link rel="stylesheet" href="css/footerstyle.css"/>
+    <title>Galaxy Bowling</title>
+    <script src="https://kit.fontawesome.com/7e4d23cf7d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-header-nav-bg">
+        <div class="container-header-nav"><a href="#"><span>Text</span></a><a href="#"><span>Text</span></a><a href="#"><span>Text</span></a><a href="#"><span>Text</span></a><a href="#"><span>Text</span></a><a href="#"><span>Text</span></a></div>
+      </div>
+      <div class="container-header-info-menu__bg">
+        <div class="container-header-info">
+          <div class="container-header-logo"><a href="#"><img src="img/logo.png"/></a></div>
+          <div class="container-header-place">
+            <div class="select">
+              <label>Город:</label>
+              <input class="select__input" type="hidden" name=""/>
+              <div class="select__head"></div>
+              <ul class="select__list" style="display: none;">
+                <li class="select__item">Коломна</li>
+                <li class="select__item">Череповец</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-header-adres"><span>Ул.Суворова,&nbsp;д.48</span></div>
+          <div class="container-header-number"><a href="tel:+74966130700">+7&nbsp;(496)&nbsp;613&#8209;07&#8209;00</a></div>
+        </div>
+        <div class="container-header-menu">
+          <nav class="container-header-menu-nav">
+            <ul class="list-header-menu">
+              <li class="container-item-list">
+                <div class="item">
+                  <figure class="content-item">
+                    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 165 143" style="enable-background:new 0 0 165 143;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                      </style>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="st0" id="Path_2-2" d="M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z"></path>
+                      </g>
+                    </svg>
+                    <div class="container-img-bg"><img src="img/1.png"/></div>
+                    <figcaption><span>Афиша</span>
+                      <div class="container-link-menu">
+                        <ul>
+                          <li><a href="#">Тарифы</a></li>
+                          <li><a href="#">Правила боулинга</a></li>
+                          <li><a href="#">Лига боулинга</a></li>
+                          <li><a href="#">Туриниры</a></li>
+                          <li><a href="#">Рекорды галактики</a></li>
+                          <li><a href="#">Чемпионат по боулингу</a></li>
+                        </ul>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li class="container-item-list">
+                <div class="item">
+                  <figure class="content-item">
+                    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 165 143" style="enable-background:new 0 0 165 143;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                      </style>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="st0" id="Path_2-2" d="M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z"></path>
+                      </g>
+                    </svg>
+                    <div class="container-img-bg"><img src="img/2.png"/></div>
+                    <figcaption><span>Боулинг</span>
+                      <div class="container-link-menu">
+                        <ul>
+                          <li><a href="#">Тарифы</a></li>
+                          <li><a href="#">Правила боулинга</a></li>
+                          <li><a href="#">Лига боулинга</a></li>
+                          <li><a href="#">Туриниры</a></li>
+                          <li><a href="#">Рекорды галактики</a></li>
+                          <li><a href="#">Чемпионат по боулингу</a></li>
+                        </ul>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li class="container-item-list">
+                <div class="item">
+                  <figure class="content-item">
+                    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 165 143" style="enable-background:new 0 0 165 143;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                      </style>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="st0" id="Path_2-2" d="M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z"></path>
+                      </g>
+                    </svg>
+                    <div class="container-img-bg"><img src="img/3.png"/></div>
+                    <figcaption><span>Ресторан</span>
+                      <div class="container-link-menu">
+                        <ul>
+                          <li><a href="#">Тарифы</a></li>
+                          <li><a href="#">Правила боулинга</a></li>
+                          <li><a href="#">Лига боулинга</a></li>
+                          <li><a href="#">Туриниры</a></li>
+                          <li><a href="#">Рекорды галактики</a></li>
+                          <li><a href="#">Чемпионат по боулингу</a></li>
+                        </ul>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li class="container-item-list">
+                <div class="item">
+                  <figure class="content-item">
+                    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 165 143" style="enable-background:new 0 0 165 143;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                      </style>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="st0" id="Path_2-2" d="M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z"></path>
+                      </g>
+                    </svg>
+                    <div class="container-img-bg"><img src="img/4.png"/></div>
+                    <figcaption><span>Для детей</span>
+                      <div class="container-link-menu">
+                        <ul>
+                          <li><a href="#">Тарифы</a></li>
+                          <li><a href="#">Правила боулинга</a></li>
+                          <li><a href="#">Лига боулинга</a></li>
+                          <li><a href="#">Туриниры</a></li>
+                          <li><a href="#">Рекорды галактики</a></li>
+                          <li><a href="#">Чемпионат по боулингу</a></li>
+                        </ul>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li class="container-item-list">
+                <div class="item">
+                  <figure class="content-item">
+                    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 165 143" style="enable-background:new 0 0 165 143;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                      </style>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="st0" id="Path_2-2" d="M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z"></path>
+                      </g>
+                    </svg>
+                    <div class="container-img-bg"><img src="img/5.png"/></div>
+                    <figcaption><span>Акции</span>
+                      <div class="container-link-menu">
+                        <ul>
+                          <li><a href="#">Тарифы</a></li>
+                          <li><a href="#">Правила боулинга</a></li>
+                          <li><a href="#">Лига боулинга</a></li>
+                          <li><a href="#">Туриниры</a></li>
+                          <li><a href="#">Рекорды галактики</a></li>
+                          <li><a href="#">Чемпионат по боулингу</a></li>
+                        </ul>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li class="container-item-list">
+                <div class="item">
+                  <figure class="content-item">
+                    <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 165 143" style="enable-background:new 0 0 165 143;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                      </style>
+                      <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <path class="st0" id="Path_2-2" d="M29.5,0.6l106.5,18.1c16,0,29.1,13,29.1,29.1l-12.6,65.7c0,16-13,29.1-29.1,29.1l0,0H42.8                                            c-16,0-29.1-13-29.1-29.1c0,0,0,0,0,0L0.4,29.7C0.4,13.6,13.4,0.6,29.5,0.6z"></path>
+                      </g>
+                    </svg>
+                    <div class="container-img-bg"><img src="img/7.png"/></div>
+                    <figcaption><span>Торты на заказ</span>
+                      <div class="container-link-menu">
+                        <ul>
+                          <li><a href="#">Тарифы</a></li>
+                          <li><a href="#">Правила боулинга</a></li>
+                          <li><a href="#">Лига боулинга</a></li>
+                          <li><a href="#">Туриниры</a></li>
+                          <li><a href="#">Рекорды галактики</a></li>
+                          <li><a href="#">Чемпионат по боулингу</a></li>
+                        </ul>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-main-carousel-news">
+        <div class="carousel slide" id="carouselExampleControls" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img class="lost-image d-block w-100" src="img/banner_samp.png" alt="..."/></div>
+            <div class="carousel-item"><img class="lost-image d-block w-100" src="img/banner_samp.png" alt="..."/></div>
+            <div class="carousel-item"><img class="lost-image d-block w-100" src="img/banner_samp.png" alt="..."/></div>
+          </div><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only"></span></a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only"></span></a>
+        </div>
+      </div>
+      <div class="container-main-foto-news">
+        <section>
+          <h2>TEXT TEXT</h2>
+          <div class="container-foto-news-position">
+            <div class="container-item">
+              <div class="container-content"><img class="lost-image" src="img/preview.jpg"/>
+                <div class="title-item">
+                  <h3>Text</h3>
+                </div>
+                <h4>subtext</h4>
+                <div class="container-view-item"><span><i class="far fa-eye"></i>123</span><span><i class="far fa-images"></i>5647</span></div><a href="#" alt=" #{textaltalb} ">Check albom</a>
+              </div>
+            </div>
+            <div class="container-item">
+              <div class="container-content"><img class="lost-image" src="img/preview.jpg"/>
+                <div class="title-item">
+                  <h3>Text</h3>
+                </div>
+                <h4>subtext</h4>
+                <div class="container-view-item"><span><i class="far fa-eye"></i>123</span><span><i class="far fa-images"></i>5647</span></div><a href="#" alt=" #{textaltalb} ">Check albom</a>
+              </div>
+            </div>
+            <div class="container-item">
+              <div class="container-content"><img class="lost-image" src="img/preview.jpg"/>
+                <div class="title-item">
+                  <h3>Text</h3>
+                </div>
+                <h4>subtext</h4>
+                <div class="container-view-item"><span><i class="far fa-eye"></i>123</span><span><i class="far fa-images"></i>5647</span></div><a href="#" alt=" #{textaltalb} ">Check albom</a>
+              </div>
+            </div>
+          </div><a class="button" href="#" alt=" #{textaltalb} ">Смотреть все альбомы</a>
+        </section>
+      </div>
+      <div class="container-main-previe-menu">
+        <div class="container-main-previe-menu-bg">
+          <section>
+            <h2>Наше меню</h2>
+            <div class="container-previe-menu-position">
+              <div class="container-item">
+                <div class="container-item-img"><img class="lost-image" src="img/carbonara.jpg"/></div>
+                <div class="container-title">
+                  <h3>TExt</h3>
+                </div>
+                <div class="subtexttitle"><span>TEETETETETTETETETT TETTETETETT TETETTETET TET TET TET TET TET TET T TTE TT T!@# !@# QWE QWE QWTE!@T E</span></div>
+                <div class="container-price-item"><span class="price">270</span>
+                  <spna class="price-currency"> руб.</spna>
+                </div>
+              </div>
+              <div class="container-item">
+                <div class="container-item-img"><img class="lost-image" src="img/chiken.jpg"/></div>
+                <div class="container-title">
+                  <h3>TExt</h3>
+                </div>
+                <div class="subtexttitle"><span>TEETETETETTETETETT TETTETETETT TETETTETET TET TET TET TET TET TET T TTE TT T!@# !@# QWE QWE QWTE!@T E</span></div>
+                <div class="container-price-item"><span class="price">270</span>
+                  <spna class="price-currency"> руб.</spna>
+                </div>
+              </div>
+              <div class="container-item">
+                <div class="container-item-img"><img class="lost-image" src="img/tea.jpg"/></div>
+                <div class="container-title">
+                  <h3>TExt</h3>
+                </div>
+                <div class="subtexttitle"><span>TEETETETETTETETETT TETTETETETT TETETTETET TET TET TET TET TET TET T TTE TT T!@# !@# QWE QWE QWTE!@T E</span></div>
+                <div class="container-price-item"><span class="price">270</span>
+                  <spna class="price-currency"> руб.</spna>
+                </div>
+              </div>
+            </div><a class="button" href="#">Смотреть всё меню</a>
+          </section>
+        </div>
+      </div>
+      <div class="container-main-feedback">
+        <section>
+          <h2>TEXT TEXT</h2>
+          <div class="container-feedback-position">
+            <div class="container-item">
+              <div class="container-content">
+                <div class="container-title">
+                  <h3>TExt</h3>
+                </div>
+                <div class="container-symbol"><span>"</span></div>
+                <div class="subtexttitle"><span>ОТДЫХАЛИ В " ГАЛАКТИКЕ", ЮБИЛЕЙ, ПАПЕ 65 ЛЕТ.ГОСТЕЙ БЫЛО МНОГО И ВСЕ ОСТАЛИСЬ ДОВОЛЬНЫ.БЛАГОДАРНЫ ВАШИМ ОФИЦИАНТАМ,ОЧЕНЬ ДОБРЫЕ И ОТЗЫВЧИВЫЕ.ВСЕГДА С УЛЫБКОЙ.НЕ ВСЕГДА , В ЗАВЕДЕНИЯХ НАШЕГО ГОРОДА , РАБОТАЮТ ТАКИЕ ЛЮДИ.ПО ПЕРВОЙ ПРОСЬБЕ ИСПОЛНЯЛИ ВСЕ НАШИ ПОЖЕЛАНИЯ</span></div><a href="#">Читать полностью</a>
+              </div>
+            </div>
+            <div class="container-item">
+              <div class="container-content">
+                <div class="container-title">
+                  <h3>TExt</h3>
+                </div>
+                <div class="container-symbol"><span>"</span></div>
+                <div class="subtexttitle"><span>Посчастливилось поучаствовать командой девчат в пивном турнире...море позитива получила. Заняли 3-е место и получили кучу удовольствия от игры, от атмосферы. Были веселые конкурсы, вкусные закуски и много-много пива. Хочется выразить слова признательности организаторам РЦ "Галактика": организовали все так замечательно, что за один вечер удалось подружить 8 разных команд, сплотить всех, повеселить анимацией, накормить, напоить. В общем – мы отлично провели вечер!</span></div><a href="#">Читать полностью</a>
+              </div>
+            </div>
+            <div class="container-item">
+              <div class="container-content">
+                <div class="container-title">
+                  <h3>TExt</h3>
+                </div>
+                <div class="container-symbol"><span>"</span></div>
+                <div class="subtexttitle"><span>ВЫРАЖАЕМ ОГРОМНУЮ БЛАГОДАРНОСТЬ БОУЛИНГ-КЛУБУ " ГАЛАКТИКА" ЗА ТО, ЧТО СДЕЛАЛИ ДЕНЬ РОЖДЕНИЯ ПРОСТО НЕЗАБЫВАЕМЫМ. ВЕСЬ ПЕРСОНАЛ ДОБРОЖЕЛАТЕЛЕН И СВОЕВРЕМЕННО РЕШАЕТ ВСЕ ВОЗНИКАЮЩИЕ ВОПРОСЫ.ПОСЛЕ ТАКОГО ОБСЛУЖИВАНИЯ И ОТНОШЕНИЯ ХОЧЕТСЯ ПРИХОДИТЬ К ВАМ СНОВА И СНОВА</span></div><a href="#">Читать полностью</a>
+              </div>
+            </div>
+          </div><a class="button" href="#">Смотреть все отзывы</a>
+        </section>
+      </div>
+      <div class="container-main-aboutus">
+        <div class="container-main-position-aboutus">
+          <section>
+            <h2>Развлекательный центр "Галактика Коломна"</h2>
+            <h3>У нас вы найдте:</h3>
+            <p>8 новейших дорожек для боулинга фирмы Sanwick</p>
+            <p>Шикарный ресторан с фирменными блюдами от шеф-повора</p>
+            <p>Детскую игровую площадку с сухим байссейном, горкой, модулями и творческими столиками</p>
+            <p>Стильный интерьер и массу возможностей для проведения банкетов и праздников</p>
+          </section>
+        </div>
+        <div class="container-main-tell-a-friend"><a href="https://vk.com" target="_blank">Рассказать друзьям
+            <div class="social-icon"><i class="fab fa-vk"></i><span id="vkontakte_count"></span></div></a></div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="container-footer-content">
+          <div class="left-content">
+            <p>&copy; РЦ "Галактика" 2018</p>
+            <p>все права защищены</p>
+          </div>
+          <div class="container-social-link">
+            <h3>Дружите с нами здесь:</h3>
+            <div class="social-link"><a class="vk fa-layers fa-fw" href="#" target="_blank"><i class="far fa-circle"></i><i class="fab fa-vk"></i></a><a class="ok fa-layers fa-fw" href="#" tarfet="_blank"><i class="far fa-circle"></i><i class="fab fa-odnoklassniki"></i></a><a class="facebook fa-layers fa-fw" href="#" target="_blank"><i class="far fa-circle"></i><i class="fab fa-facebook-f"></i></a><a class="instagram fa-layers fa-fw" href="#" target="_blank"><i class="far fa-circle"></i><i class="fab fa-instagram"></i></a></div>
+          </div>
+          <div class="right-content">
+            <h4>График работы</h4>
+            <ul>
+              <li><span>Понедельник&nbsp;-&nbsp;четверг:&nbsp;<span>c&nbsp;</span><span>14:00&nbsp;</span><span>до&nbsp;</span><span>01:00&nbsp;</span></span></li>
+              <li><span>Пятница:&nbsp;<span>c&nbsp;</span><span>12:00&nbsp;</span><span>до&nbsp;</span><span>04:00&nbsp;</span></span></li>
+              <li><span>Суббота:&nbsp;<span>c&nbsp;</span><span>11:00&nbsp;</span><span>до&nbsp;</span><span>04:00&nbsp;</span></span></li>
+              <li><span>Воскресенье:&nbsp;<span>c&nbsp;</span><span>12:00&nbsp;</span><span>до&nbsp;</span><span>02:00&nbsp;</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

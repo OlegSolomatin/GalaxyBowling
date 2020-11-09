@@ -1,0 +1,383 @@
+@import "../libs/fontawesome-free-5.15.1-web/css/all.css";
+@charset "UTF-8";
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin flex-shrink($num) {
+  -ms-flex-negative: $num;
+  flex-shrink: $num;
+}
+@mixin flex-rowdirection {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@mixin flex-rowrdirection {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+@mixin flex-coldirection{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@mixin flex-colrdirection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+@mixin flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+@mixin flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@mixin justify-content-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+@mixin justify-content-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+@mixin justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@mixin justify-content-between{
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@mixin justify-content-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+@mixin justfy-content-evenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+@mixin align-items-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+@mixin align-items-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@mixin align-items-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+@mixin align-items-baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@mixin mediaMaxW($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin mediaMinW($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+@mixin mediaMaxH($height) {
+  @media screen and (max-height: $height) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-ExtraBoldItalic";
+  src: url("../fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url("../fonts/OpenSans-LightItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin paddingposition(){
+  padding: 0px 5vw;
+  @include mediaMaxW(1368px){
+    padding: 0px 3vw;
+  }
+}
+
+@mixin linkstyle($size){
+  color: $whitetext;
+  font-family: 'OpenSans-SemiBold';
+  font-size: $size;
+  transition: .8s;
+  text-decoration: none;
+  line-height: 1.2;
+  &:hover{
+    color: $yellowtext;
+  }
+}
+
+@mixin stylebutton {
+  padding: clamp(5px, 0.8vw, 15px) clamp(10px, 1.5vw, 29px);
+  background: $gradientWh;
+  color: $whitetext;
+  font-size: $size20;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'OpenSans-SemiBold';
+  transition: .8s;
+  &:hover{
+    color: $yellowtext;
+  }
+}
+
+@mixin styletitle{
+  color: $fioltext;
+  font-size: $size38;
+  position: relative;
+  &:before {
+    content: "";
+    border-bottom: 2px solid $yellowtext;
+    border-top: 2px solid $yellowtext;
+    width: 40px;
+    height: 14px;
+    position: absolute;
+    top: calc(0.45em - 1px);
+    margin-left: -50px;
+
+  }
+  &:after {
+    content: "";
+    border-bottom: 2px solid $yellowtext;
+    border-top: 2px solid $yellowtext;
+    width: 40px;
+    height: 14px;
+    position: absolute;
+    top: calc(0.45em - 1px);
+    margin-left: 10px;
+  }
+}
+
+@mixin stylesociallink($color){
+  @include flex();
+  @include align-items-center();
+  background: $whitetext;
+  padding: 13px 23px;
+  font-size: $size20;
+  color: $blacktext;
+  border-radius: 30px;
+  text-decoration: none;
+  .social-icon{
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    background: $color;
+    svg{
+      color: $whitetext;
+      font-size: $size20;
+    }
+    span{
+      margin-left: 5px;
+      color: $whitetext;
+      font-size: $size20;
+    }
+  }
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+label{
+  margin: 0;
+}
+ul,li,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: unset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.2;
+  &::before {
+    content: none;
+  }
+  &::after {
+    content: none;
+  }
+}
+$size20: clamp(16px, 2vw, 20px);
+$size28: clamp(16px, 2vw, 28px);
+$size30: clamp(18px, 2vw, 30px);
+$size35: clamp(20px, 2vw, 35px);
+$size38: clamp(28px, 2vw, 38px);
+$size80: clamp(50px, 5vw, 80px);
+
+$whitetext: #fff;
+$lightfiol: #9D11CE;
+$bgfiolmountain: #D50181;
+$fioltext: #560188;
+$darkfiol: #2A0252;
+$blacktext: #404040;
+$yellowtext: #EFF121;
+
+$colorvk: #4a76a8;
+$colorfb: #1877f2;
+$colortw: #1da1f2;
+$colorok: #F2720C;
+$colorinst: #c32aa3;
+$coloryt: #ff0000;
+$colortg: #0088cc;
+$colorwa: #25d366;
+
+$menubgcolor: #F8E9FC;
+$gradientHW: transparent linear-gradient(145deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
+$gradientWh: transparent linear-gradient(104deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
+
+.lost-image-min {
+  font-family: 'Helvetica';
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 1px;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  min-height: 50px;
+
+  &:after {
+    content: "\f127" " Картинка потерялась" /*attr(alt)*/
+  ;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    background-color: rgb(230, 230, 230);
+    border: 2px dotted rgb(200, 200, 200);
+    border-radius: 5px;
+  }
+}
+
+.lost-image {
+  font-family: 'Helvetica';
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  min-height: 50px;
+  content: " ";
+  display: block;
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    height: calc(100% + 40px);
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border: 2px dotted rgb(200, 200, 200);
+    border-radius: 5px;
+  }
+
+  &:after {
+    content: " Наша картинка " attr(alt) " потерялась, мы скоро все исправим :) ";
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Font Awesome 5 Free";
+    color: rgb(100, 100, 100);
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
