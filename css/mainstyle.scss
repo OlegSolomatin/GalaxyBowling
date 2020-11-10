@@ -476,7 +476,7 @@ main{
   background-image: url("../img/mountains_bg.jpg");
   background-repeat:  repeat-x;
   background-size: 100% 60%;
-  background-position-y: bottom;
+  background-position-y: 125%;
   border-bottom: 3px solid $bgfiolmountain;
   @include flex();
   @include align-items-center();
@@ -484,6 +484,7 @@ main{
   @include flex-coldirection();
   @include mediaMaxW(768px){
    background-size: 100% 100%;
+   background-position-y: 100%;
   }
   .container-main-position-aboutus{
    @include paddingposition();
