@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-
-
     jQuery(($) => {
         $('.select').on('click', '.select__head', function () {
             if ($(this).hasClass('open')) {

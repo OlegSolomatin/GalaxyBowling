@@ -342,19 +342,9 @@ footer .container-footer .container-footer-content .container-social-link .socia
 footer .container-footer .container-footer-content .container-social-link .social-link a:hover svg:first-child {
   stroke: none;
 }
-footer .container-footer .container-footer-content .container-social-link .social-link a.vk:hover {
-  color: #4a76a8;
-  fill: #4a76a8;
-  transition: 0.8s;
-}
 footer .container-footer .container-footer-content .container-social-link .social-link a.vk:hover svg {
   color: #4a76a8;
   fill: #4a76a8;
-  transition: 0.8s;
-}
-footer .container-footer .container-footer-content .container-social-link .social-link a.ok:hover {
-  color: #F2720C;
-  fill: #F2720C;
   transition: 0.8s;
 }
 footer .container-footer .container-footer-content .container-social-link .social-link a.ok:hover svg {
@@ -362,19 +352,9 @@ footer .container-footer .container-footer-content .container-social-link .socia
   fill: #F2720C;
   transition: 0.8s;
 }
-footer .container-footer .container-footer-content .container-social-link .social-link a.facebook:hover {
-  color: #1877f2;
-  fill: #1877f2;
-  transition: 0.8s;
-}
 footer .container-footer .container-footer-content .container-social-link .social-link a.facebook:hover svg {
   color: #1877f2;
   fill: #1877f2;
-  transition: 0.8s;
-}
-footer .container-footer .container-footer-content .container-social-link .social-link a.instagram:hover {
-  color: #c32aa3;
-  fill: #c32aa3;
   transition: 0.8s;
 }
 footer .container-footer .container-footer-content .container-social-link .social-link a.instagram:hover svg {
@@ -382,19 +362,9 @@ footer .container-footer .container-footer-content .container-social-link .socia
   fill: #c32aa3;
   transition: 0.8s;
 }
-footer .container-footer .container-footer-content .container-social-link .social-link a.youtube:hover {
-  color: #ff0000;
-  fill: #ff0000;
-  transition: 0.8s;
-}
 footer .container-footer .container-footer-content .container-social-link .social-link a.youtube:hover svg {
   color: #ff0000;
   fill: #ff0000;
-  transition: 0.8s;
-}
-footer .container-footer .container-footer-content .container-social-link .social-link a.twitter:hover {
-  color: #1da1f2;
-  fill: #1da1f2;
   transition: 0.8s;
 }
 footer .container-footer .container-footer-content .container-social-link .social-link a.twitter:hover svg {
@@ -402,19 +372,9 @@ footer .container-footer .container-footer-content .container-social-link .socia
   fill: #1da1f2;
   transition: 0.8s;
 }
-footer .container-footer .container-footer-content .container-social-link .social-link a.telegram:hover {
-  color: #0088cc;
-  fill: #0088cc;
-  transition: 0.8s;
-}
 footer .container-footer .container-footer-content .container-social-link .social-link a.telegram:hover svg {
   color: #0088cc;
   fill: #0088cc;
-  transition: 0.8s;
-}
-footer .container-footer .container-footer-content .container-social-link .social-link a.whatsapp:hover {
-  color: #25d366;
-  fill: #25d366;
   transition: 0.8s;
 }
 footer .container-footer .container-footer-content .container-social-link .social-link a.whatsapp:hover svg {

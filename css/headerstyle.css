@@ -316,7 +316,8 @@ header .container-header-info-menu__bg .container-header-info .container-header-
   justify-content: center;
 }
 header .container-header-info-menu__bg .container-header-info .container-header-place .select__head {
-  width: clamp(100px, 2vw, 150px);
+  width: auto;
+  min-width: 120px;
   max-width: 100%;
   font-size: clamp(16px, 1.7vw, 28px);
   line-height: 1;
@@ -328,12 +329,13 @@ header .container-header-info-menu__bg .container-header-info .container-header-
   content: "";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
+  background: url("../img/sort-down-solid.svg") no-repeat;
   fill: #fff;
-  width: 25px;
+  width: 15px;
   height: 25px;
   position: absolute;
-  right: 20px;
-  bottom: 50%;
+  right: -30px;
+  bottom: 0px;
   transform: rotate(360deg);
   display: block;
   transition: 0.2s ease-in;

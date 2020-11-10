@@ -89,7 +89,8 @@ header {
         }
 
         .select__head {
-          width: clamp(100px, 2vw, 150px);
+          width: auto ;//clamp(100px, 2vw, 150px);
+          min-width: 120px;
           max-width: 100%;
           font-size: $size28;
           line-height: 1;
@@ -102,13 +103,13 @@ header {
           content: '';
           font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
           font-weight: 900;
-          //background: url("../img/arrow-circle-down-solid.svg"), no-repeat;
+          background: url("../img/sort-down-solid.svg") no-repeat;
           fill: $whitetext;
-          width: 25px;
+          width: 15px;
           height: 25px;
           position: absolute;
-          right: 20px;
-          bottom: 50%;
+          right: -30px;
+          bottom: 0px;
           transform: rotate(360deg);
           display: block;
           transition: .2s ease-in;
