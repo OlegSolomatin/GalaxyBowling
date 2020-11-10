@@ -66,6 +66,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "OpenSans-Regular";
 }
 
 label {
@@ -201,7 +202,7 @@ header .container-header-nav-bg .container-header-nav {
 header .container-header-nav-bg .container-header-nav a {
   color: #fff;
   font-family: "OpenSans-SemiBold";
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   transition: 0.8s;
   text-decoration: none;
   line-height: 1.2;
@@ -289,7 +290,7 @@ header .container-header-info-menu__bg .container-header-info .container-header-
 }
 header .container-header-info-menu__bg .container-header-info .container-header-place label {
   color: #fff;
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   font-family: "OpenSans-SemiBold";
   line-height: 1.2;
 }
@@ -317,7 +318,7 @@ header .container-header-info-menu__bg .container-header-info .container-header-
 header .container-header-info-menu__bg .container-header-info .container-header-place .select__head {
   width: clamp(100px, 2vw, 150px);
   max-width: 100%;
-  font-size: clamp(16px, 2vw, 28px);
+  font-size: clamp(16px, 1.7vw, 28px);
   line-height: 1;
   color: #EFF121;
   cursor: pointer;
@@ -356,7 +357,7 @@ header .container-header-info-menu__bg .container-header-info .container-header-
   z-index: 100;
   margin: 0;
   padding: 0;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   color: #fff;
   scrollbar-color: dark;
   scrollbar-width: thin;
@@ -383,7 +384,7 @@ header .container-header-info-menu__bg .container-header-info .container-header-
 }
 header .container-header-info-menu__bg .container-header-info .container-header-adres {
   color: #fff;
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   width: max-content;
   margin: 0px clamp(15px, 3vw, 50px);
 }
@@ -401,7 +402,7 @@ header .container-header-info-menu__bg .container-header-info .container-header-
 header .container-header-info-menu__bg .container-header-info .container-header-number a {
   color: #fff;
   font-family: "OpenSans-SemiBold";
-  font-size: clamp(20px, 2vw, 35px);
+  font-size: clamp(20px, 1.7vw, 35px);
   transition: 0.8s;
   text-decoration: none;
   line-height: 1.2;
@@ -515,7 +516,7 @@ header .container-header-info-menu__bg .container-header-menu-nav .list-header-m
 header .container-header-info-menu__bg .container-header-menu-nav .list-header-menu .container-item-list .item figure figcaption span {
   color: #fff;
   line-height: 1.2;
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   padding: 10px 10px 15px;
   text-transform: uppercase;
   background: transparent;
@@ -561,7 +562,7 @@ header .container-header-info-menu__bg .container-header-menu-nav .list-header-m
   display: block;
   position: absolute;
   background: #EFF121;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   transition: 0.8s;
   width: calc(100vw - 10vw);
   left: 0;

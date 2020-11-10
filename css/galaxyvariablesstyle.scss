@@ -256,6 +256,7 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: 'OpenSans-Regular';
 }
 label{
   margin: 0;
@@ -283,11 +284,11 @@ h1, h2, h3, h4, h5, h6 {
     content: none;
   }
 }
-$size20: clamp(16px, 2vw, 20px);
-$size28: clamp(16px, 2vw, 28px);
-$size30: clamp(18px, 2vw, 30px);
-$size35: clamp(20px, 2vw, 35px);
-$size38: clamp(28px, 2vw, 38px);
+$size20: clamp(16px, 1.7vw, 20px);
+$size28: clamp(16px, 1.7vw, 28px);
+$size30: clamp(18px, 1.7vw, 30px);
+$size35: clamp(20px, 1.7vw, 35px);
+$size38: clamp(28px, 1.7vw, 38px);
 $size80: clamp(50px, 5vw, 80px);
 
 $whitetext: #fff;

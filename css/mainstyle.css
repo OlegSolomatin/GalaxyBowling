@@ -66,6 +66,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "OpenSans-Regular";
 }
 
 label {
@@ -267,7 +268,7 @@ main .container-main-foto-news section {
 }
 main .container-main-foto-news section h2 {
   color: #560188;
-  font-size: clamp(28px, 2vw, 38px);
+  font-size: clamp(28px, 1.7vw, 38px);
   position: relative;
 }
 main .container-main-foto-news section h2:before {
@@ -407,12 +408,12 @@ main .container-main-foto-news section .container-foto-news-position .container-
   }
 }
 main .container-main-foto-news section .container-foto-news-position .container-item .container-content .title-item h3 {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   color: #560188;
   margin: 0px;
 }
 main .container-main-foto-news section .container-foto-news-position .container-item .container-content h4 {
-  font-size: clamp(16px, 2vw, 28px);
+  font-size: clamp(16px, 1.7vw, 28px);
   color: #404040;
 }
 main .container-main-foto-news section .container-foto-news-position .container-item .container-content .container-view-item {
@@ -455,7 +456,7 @@ main .container-main-foto-news section .container-foto-news-position .container-
   padding: clamp(5px, 0.8vw, 15px) clamp(10px, 1.5vw, 29px);
   background: transparent linear-gradient(104deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   border-radius: 30px;
   text-decoration: none;
   font-family: "OpenSans-SemiBold";
@@ -482,7 +483,7 @@ main .container-main-foto-news section .button {
   padding: clamp(5px, 0.8vw, 15px) clamp(10px, 1.5vw, 29px);
   background: transparent linear-gradient(104deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   border-radius: 30px;
   text-decoration: none;
   font-family: "OpenSans-SemiBold";
@@ -540,7 +541,7 @@ main .container-main-previe-menu .container-main-previe-menu-bg section {
 }
 main .container-main-previe-menu .container-main-previe-menu-bg section h2 {
   color: #560188;
-  font-size: clamp(28px, 2vw, 38px);
+  font-size: clamp(28px, 1.7vw, 38px);
   position: relative;
 }
 main .container-main-previe-menu .container-main-previe-menu-bg section h2:before {
@@ -656,7 +657,7 @@ main .container-main-previe-menu .container-main-previe-menu-bg section .contain
   content: "";
 }
 main .container-main-previe-menu .container-main-previe-menu-bg section .container-previe-menu-position .container-item .container-title {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   color: #560188;
   margin: 25px 0;
   text-align: center;
@@ -664,7 +665,7 @@ main .container-main-previe-menu .container-main-previe-menu-bg section .contain
 main .container-main-previe-menu .container-main-previe-menu-bg section .container-previe-menu-position .container-item .subtexttitle {
   text-align: center;
   color: #404040;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   line-height: 1.2;
   width: 70%;
 }
@@ -681,12 +682,12 @@ main .container-main-previe-menu .container-main-previe-menu-bg section .contain
   margin-top: 25px;
 }
 main .container-main-previe-menu .container-main-previe-menu-bg section .container-previe-menu-position .container-item .container-price-item .price {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   color: #560188;
   line-height: 1.2;
 }
 main .container-main-previe-menu .container-main-previe-menu-bg section .container-previe-menu-position .container-item .container-price-item .price-currency {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   color: #404040;
   line-height: 1;
 }
@@ -694,7 +695,7 @@ main .container-main-previe-menu .container-main-previe-menu-bg section .button 
   padding: clamp(5px, 0.8vw, 15px) clamp(10px, 1.5vw, 29px);
   background: transparent linear-gradient(104deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   border-radius: 30px;
   text-decoration: none;
   font-family: "OpenSans-SemiBold";
@@ -720,7 +721,7 @@ main .container-main-feedback section {
 }
 main .container-main-feedback section h2 {
   color: #560188;
-  font-size: clamp(28px, 2vw, 38px);
+  font-size: clamp(28px, 1.7vw, 38px);
   position: relative;
 }
 main .container-main-feedback section h2:before {
@@ -835,7 +836,7 @@ main .container-main-feedback section .container-feedback-position .container-it
   }
 }
 main .container-main-feedback section .container-feedback-position .container-item .container-content .container-title {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   color: #560188;
   text-align: center;
   text-overflow: ellipsis;
@@ -852,7 +853,7 @@ main .container-main-feedback section .container-feedback-position .container-it
   text-align: left;
   width: 100%;
   color: #404040;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -876,7 +877,7 @@ main .container-main-feedback section .container-feedback-position .container-it
   padding: clamp(5px, 0.8vw, 15px) clamp(10px, 1.5vw, 29px);
   background: transparent linear-gradient(104deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   border-radius: 30px;
   text-decoration: none;
   font-family: "OpenSans-SemiBold";
@@ -903,7 +904,7 @@ main .container-main-feedback section .button {
   padding: clamp(5px, 0.8vw, 15px) clamp(10px, 1.5vw, 29px);
   background: transparent linear-gradient(104deg, #3C016D 0%, #D060F2 100%) 0% 0% no-repeat padding-box;
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   border-radius: 30px;
   text-decoration: none;
   font-family: "OpenSans-SemiBold";
@@ -976,9 +977,9 @@ main .container-main-aboutus .container-main-position-aboutus section {
   }
 }
 main .container-main-aboutus .container-main-position-aboutus section h2 {
-  font-size: clamp(28px, 2vw, 38px);
+  font-size: clamp(28px, 1.7vw, 38px);
   color: #560188;
-  width: 35%;
+  width: 50%;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -988,12 +989,12 @@ main .container-main-aboutus .container-main-position-aboutus section h2 {
   }
 }
 main .container-main-aboutus .container-main-position-aboutus section h3 {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.7vw, 30px);
   color: #560188;
   margin: clamp(10px, 2vw, 40px) 0;
 }
 main .container-main-aboutus .container-main-position-aboutus section p {
-  font-size: clamp(16px, 2vw, 28px);
+  font-size: clamp(16px, 1.7vw, 28px);
   color: #404040;
   line-height: 1.2;
   margin: 0;
@@ -1049,7 +1050,7 @@ main .container-main-aboutus .container-main-tell-a-friend a {
   align-items: center;
   background: #fff;
   padding: 13px 23px;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
   color: #404040;
   border-radius: 30px;
   text-decoration: none;
@@ -1062,12 +1063,12 @@ main .container-main-aboutus .container-main-tell-a-friend a .social-icon {
 }
 main .container-main-aboutus .container-main-tell-a-friend a .social-icon svg {
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
 }
 main .container-main-aboutus .container-main-tell-a-friend a .social-icon span {
   margin-left: 5px;
   color: #fff;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 1.7vw, 20px);
 }
 
 /*# sourceMappingURL=mainstyle.css.map */

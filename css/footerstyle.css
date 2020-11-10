@@ -1,70 +1,83 @@
 @charset "UTF-8";
-@import url(../libs/fontawesome-free-5.15.1-web/css/all.css);
+@import "../libs/fontawesome-free-5.15.1-web/css/all.css";
 @font-face {
   font-family: "OpenSans-Bold";
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-BoldItalic";
   src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-ExtraBold";
   src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-ExtraBoldItalic";
   src: url("../fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-Italic";
   src: url("../fonts/OpenSans-Italic.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-Light";
   src: url("../fonts/OpenSans-Light.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-LightItalic";
   src: url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-Regular";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "OpenSans-SemiBold";
   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "OpenSans-Regular";
+}
 
 label {
-  margin: 0; }
+  margin: 0;
+}
 
 ul, li, ol {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   border: none;
@@ -75,14 +88,17 @@ h1, h2, h3, h4, h5, h6 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.2; }
-  h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-    content: none; }
-  h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
-    content: none; }
+  line-height: 1.2;
+}
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+  content: none;
+}
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  content: none;
+}
 
 .lost-image-min {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   font-weight: 300;
   line-height: 1.2;
   text-align: center;
@@ -91,25 +107,27 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   display: block;
   position: relative;
-  min-height: 50px; }
-  .lost-image-min:after {
-    content: "" " Картинка потерялась";
-    display: block;
-    font-size: 16px;
-    font-style: normal;
-    font-family: FontAwesome;
-    color: #646464;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    height: auto;
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
-    border-radius: 5px; }
+  min-height: 50px;
+}
+.lost-image-min:after {
+  content: "" " Картинка потерялась";
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-family: FontAwesome;
+  color: #646464;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  background-color: #e6e6e6;
+  border: 2px dotted #c8c8c8;
+  border-radius: 5px;
+}
 
 .lost-image {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   font-weight: 300;
   line-height: 1.2;
   text-align: center;
@@ -119,29 +137,32 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   min-height: 50px;
   content: " ";
-  display: block; }
-  .lost-image:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    height: calc(100% + 40px);
-    width: 100%;
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
-    border-radius: 5px; }
-  .lost-image:after {
-    content: " Наша картинка " attr(alt) " потерялась, мы скоро все исправим :) ";
-    display: block;
-    font-size: 16px;
-    font-style: normal;
-    font-family: "Font Awesome 5 Free";
-    color: #646464;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    width: 100%;
-    text-align: center; }
+  display: block;
+}
+.lost-image:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: calc(100% + 40px);
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 2px dotted #c8c8c8;
+  border-radius: 5px;
+}
+.lost-image:after {
+  content: " Наша картинка " attr(alt) " потерялась, мы скоро все исправим :) ";
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Font Awesome 5 Free";
+  color: #646464;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 
 footer {
   width: 100%;
@@ -155,243 +176,294 @@ footer {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+}
+footer .container-footer {
+  padding: 0px 5vw;
+  max-width: 1920px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media screen and (max-width: 1368px) {
   footer .container-footer {
-    padding: 0px 5vw;
-    max-width: 1920px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding: 0px 3vw;
+  }
+}
+footer .container-footer .container-footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5vw;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
-    @media screen and (max-width: 1368px) {
-      footer .container-footer {
-        padding: 0px 3vw; } }
-    footer .container-footer .container-footer-content {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 100%;
-      margin-top: 5vw; }
-      @media screen and (max-width: 768px) {
-        footer .container-footer .container-footer-content {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; } }
-      footer .container-footer .container-footer-content .left-content {
-        width: 100%;
-        text-align: left;
-        font-size: clamp(16px, 2vw, 20px);
-        color: #fff;
-        line-height: 1.2; }
-        @media screen and (max-width: 768px) {
-          footer .container-footer .container-footer-content .left-content {
-            order: 3;
-            width: max-content; } }
-        footer .container-footer .container-footer-content .left-content p {
-          margin: 0; }
-      footer .container-footer .container-footer-content .container-social-link {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: center;
-        width: 100%; }
-        @media screen and (max-width: 768px) {
-          footer .container-footer .container-footer-content .container-social-link {
-            order: 1;
-            width: max-content; } }
-        footer .container-footer .container-footer-content .container-social-link h3 {
-          color: #fff;
-          text-transform: uppercase;
-          font-size: clamp(16px, 2vw, 28px); }
-        footer .container-footer .container-footer-content .container-social-link .social-link {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-          flex-direction: row;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          width: 100%; }
-          footer .container-footer .container-footer-content .container-social-link .social-link a {
-            text-decoration: none;
-            color: #fff;
-            width: 5vw;
-            height: 5vw;
-            margin: clamp(10px, 2vw, 20px);
-            transition: .8s;
-            border-radius: 50%; }
-            @media screen and (max-width: 768px) {
-              footer .container-footer .container-footer-content .container-social-link .social-link a {
-                width: 10vw;
-                height: 10vw; } }
-            footer .container-footer .container-footer-content .container-social-link .social-link a svg {
-              color: #fff;
-              fill: #fff; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a svg:first-child {
-                width: 5vw;
-                height: 5vw;
-                stroke-width: 30px;
-                stroke: #D50181;
-                stroke-width: 30px;
-                stroke: #D50181; }
-                @media screen and (max-width: 768px) {
-                  footer .container-footer .container-footer-content .container-social-link .social-link a svg:first-child {
-                    width: 10vw;
-                    height: 10vw; } }
-              footer .container-footer .container-footer-content .container-social-link .social-link a svg:last-child {
-                width: 5vw;
-                height: 2.5vw; }
-                @media screen and (max-width: 768px) {
-                  footer .container-footer .container-footer-content .container-social-link .social-link a svg:last-child {
-                    width: 10vw;
-                    height: 5vw; } }
-            footer .container-footer .container-footer-content .container-social-link .social-link a:hover {
-              border-radius: 50%;
-              background: #fff;
-              border: 0px; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a:hover svg:first-child {
-                stroke: none; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.vk:hover {
-              color: #4a76a8;
-              fill: #4a76a8;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.vk:hover svg {
-                color: #4a76a8;
-                fill: #4a76a8;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.ok:hover {
-              color: #F2720C;
-              fill: #F2720C;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.ok:hover svg {
-                color: #F2720C;
-                fill: #F2720C;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.facebook:hover {
-              color: #1877f2;
-              fill: #1877f2;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.facebook:hover svg {
-                color: #1877f2;
-                fill: #1877f2;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.instagram:hover {
-              color: #c32aa3;
-              fill: #c32aa3;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.instagram:hover svg {
-                color: #c32aa3;
-                fill: #c32aa3;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.youtube:hover {
-              color: #ff0000;
-              fill: #ff0000;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.youtube:hover svg {
-                color: #ff0000;
-                fill: #ff0000;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.twitter:hover {
-              color: #1da1f2;
-              fill: #1da1f2;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.twitter:hover svg {
-                color: #1da1f2;
-                fill: #1da1f2;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.telegram:hover {
-              color: #0088cc;
-              fill: #0088cc;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.telegram:hover svg {
-                color: #0088cc;
-                fill: #0088cc;
-                transition: .8s; }
-            footer .container-footer .container-footer-content .container-social-link .social-link a.whatsapp:hover {
-              color: #25d366;
-              fill: #25d366;
-              transition: .8s; }
-              footer .container-footer .container-footer-content .container-social-link .social-link a.whatsapp:hover svg {
-                color: #25d366;
-                fill: #25d366;
-                transition: .8s; }
-      footer .container-footer .container-footer-content .right-content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-        width: 100%; }
-        @media screen and (max-width: 768px) {
-          footer .container-footer .container-footer-content .right-content {
-            order: 2;
-            width: max-content;
-            margin: 25px 0;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center; } }
-        footer .container-footer .container-footer-content .right-content h4 {
-          font-size: clamp(16px, 2vw, 20px);
-          color: #fff;
-          text-align: right;
-          line-height: 1.2; }
-          @media screen and (max-width: 768px) {
-            footer .container-footer .container-footer-content .right-content h4 {
-              line-height: 1.4; } }
-        footer .container-footer .container-footer-content .right-content ul {
-          text-align: right;
-          font-size: clamp(16px, 2vw, 20px);
-          color: #fff;
-          line-height: 1.2; }
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+footer .container-footer .container-footer-content .left-content {
+  width: 100%;
+  text-align: left;
+  font-size: clamp(16px, 1.7vw, 20px);
+  color: #fff;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .left-content {
+    order: 3;
+    width: max-content;
+  }
+}
+footer .container-footer .container-footer-content .left-content p {
+  margin: 0;
+}
+footer .container-footer .container-footer-content .container-social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .container-social-link {
+    order: 1;
+    width: max-content;
+  }
+}
+footer .container-footer .container-footer-content .container-social-link h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: clamp(16px, 1.7vw, 28px);
+}
+footer .container-footer .container-footer-content .container-social-link .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a {
+  text-decoration: none;
+  color: #fff;
+  width: 5vw;
+  height: 5vw;
+  margin: clamp(10px, 2vw, 20px);
+  transition: 0.8s;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .container-social-link .social-link a {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a svg {
+  color: #fff;
+  fill: #fff;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a svg:first-child {
+  width: 5vw;
+  height: 5vw;
+  stroke-width: 30px;
+  stroke: #D50181;
+  stroke-width: 30px;
+  stroke: #D50181;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .container-social-link .social-link a svg:first-child {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a svg:last-child {
+  width: 5vw;
+  height: 2.5vw;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .container-social-link .social-link a svg:last-child {
+    width: 10vw;
+    height: 5vw;
+  }
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a:hover {
+  border-radius: 50%;
+  background: #fff;
+  border: 0px;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a:hover svg:first-child {
+  stroke: none;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.vk:hover {
+  color: #4a76a8;
+  fill: #4a76a8;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.vk:hover svg {
+  color: #4a76a8;
+  fill: #4a76a8;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.ok:hover {
+  color: #F2720C;
+  fill: #F2720C;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.ok:hover svg {
+  color: #F2720C;
+  fill: #F2720C;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.facebook:hover {
+  color: #1877f2;
+  fill: #1877f2;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.facebook:hover svg {
+  color: #1877f2;
+  fill: #1877f2;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.instagram:hover {
+  color: #c32aa3;
+  fill: #c32aa3;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.instagram:hover svg {
+  color: #c32aa3;
+  fill: #c32aa3;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.youtube:hover {
+  color: #ff0000;
+  fill: #ff0000;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.youtube:hover svg {
+  color: #ff0000;
+  fill: #ff0000;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.twitter:hover {
+  color: #1da1f2;
+  fill: #1da1f2;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.twitter:hover svg {
+  color: #1da1f2;
+  fill: #1da1f2;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.telegram:hover {
+  color: #0088cc;
+  fill: #0088cc;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.telegram:hover svg {
+  color: #0088cc;
+  fill: #0088cc;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.whatsapp:hover {
+  color: #25d366;
+  fill: #25d366;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .container-social-link .social-link a.whatsapp:hover svg {
+  color: #25d366;
+  fill: #25d366;
+  transition: 0.8s;
+}
+footer .container-footer .container-footer-content .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .right-content {
+    order: 2;
+    width: max-content;
+    margin: 25px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+footer .container-footer .container-footer-content .right-content h4 {
+  font-size: clamp(16px, 1.7vw, 20px);
+  color: #fff;
+  text-align: right;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  footer .container-footer .container-footer-content .right-content h4 {
+    line-height: 1.4;
+  }
+}
+footer .container-footer .container-footer-content .right-content ul {
+  text-align: right;
+  font-size: clamp(16px, 1.7vw, 20px);
+  color: #fff;
+  line-height: 1.2;
+}
 
 /*# sourceMappingURL=footerstyle.css.map */
